@@ -1,0 +1,11 @@
+Introduction
+============
+
+This is a simple handwritten digit recognition programs coded in Python, which 
+use neural networks. Digit recognition programs are written as web apps and 
+require Django 1.1 framework.
+
+I have used and/or modified next projects:
+
+ * Canvas Painter (http://caimansys.com/painter/)
+ * Smala (http://smala.sourceforge.net/)

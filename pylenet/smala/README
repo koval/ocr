@@ -1,0 +1,40 @@
+This information was copied from http://smala.sourceforge.net/
+
+Smala
+=====
+
+Scalable modular neural networks
+
+Smala is a scalable and modular machine learning toolbox written in Python and 
+Fortran released under the MIT license. Smala has a simple Python user interface
+ and uses Fortran for computationally intensive tasks. Smala is based on neural 
+networks an implements different modules such as spatial convolutions, 
+multi-layer perceptrons and structure embeddings. Smala modular design is 
+inspired from the Torch5 library.
+
+Installation
+============
+
+Install the required dependencies:
+
+    sudo apt-get install python-numpy gfortran python-dev
+
+Download the sources:
+
+    svn co https://smala.svn.sourceforge.net/svnroot/smala smala
+
+Compile the Fortran sources:
+
+    cd smala/smala && f2py -c base.f -m base && cd ../..
+
+Then, either modify the PYTHONPATH environment variable to include the path 
+where you have checked out. If you are using bash:
+
+    PYTHONPATH="$HOME/smala"
+
+... or if you are using csh:
+
+    setenv PYTHONPATH "${HOME}/smala"
+
+... or move the folder to the /usr/local/lib/pythonXX/ folder where XX is your 
+version of Python. 
