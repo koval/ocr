@@ -9,10 +9,10 @@ import os
 urlpatterns = patterns('',
     (r'^static/(?P<path>.*)$', 'django.views.static.serve',
         {'document_root': os.path.join(os.path.dirname(__file__), 'static')}),
-    (r'^$', 'digitocr.pylenet.views.index'),
-    (r'^init$', 'digitocr.pylenet.views.init'),
-    (r'^dump$', 'digitocr.pylenet.views.dump'),
-    (r'^recognize$', 'digitocr.pylenet.views.recognize'),
+    (r'^$', 'ocr.pylenet.views.index'),
+    (r'^init$', 'ocr.pylenet.views.init'),
+    (r'^dump$', 'ocr.pylenet.views.dump'),
+    (r'^recognize$', 'ocr.pylenet.views.recognize'),
 
     # Example:
     # (r'^digitocr/', include('digitocr.foo.urls')),

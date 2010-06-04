@@ -96,9 +96,10 @@ class Recognize(BaseView):
         IMG = out.getvalue()
 
         global NN
-        if NN is not None or os.path.exists(PICKLE_FILE):
+        if NN is None and os.path.exists(PICKLE_FILE):
             NN = pickle.load(file(PICKLE_FILE, 'rb'))
 
+        if NN is not None:
             # get array of image pixels
             pixels = list(img.getdata())
 
